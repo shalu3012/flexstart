@@ -7,12 +7,17 @@ body {
   color: #444444;
 }
 
-
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Nunito", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -44,250 +49,229 @@ section {
   color: #012970;
 }
 
-
-
-body{
-    font-family: "Nunito", sans-serif;
+body {
+  font-family: "Nunito", sans-serif;
 }
 .header {
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 20px 0;
-  }
-  
-  .header.header-scrolled {
-    background: #fff;
-    padding: 15px 0;
-    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  }
-  
-  .header .logo {
-    line-height: 0;
-  }
-  
-  .header .logo img {
-    max-height: 40px;
-    margin-right: 6px;
-  }
-  
-  .header .logo span {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #012970;
-    font-family: "Nunito", sans-serif;
-    margin-top: 3px;
-  }
-  
-  /*--------------------------------------------------------------
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+.header.header-scrolled {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header .logo {
+  line-height: 0;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.header .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
+}
+
+/*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
-  /**
+/**
   * Desktop Navigation 
   */
-  .navbar {
-    padding: 0;
-  }
-  
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-  
-  .navbar li {
-    position: relative;
-  }
-  
-  .navbar a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0 10px 30px;
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: #013289;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-  
-  .navbar a i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-  }
-  
-  .navbar a:hover, .navbar .active, .navbar li:hover > a {
-    color: #4154f1;
-  }
-  
-  .navbar .getstarted {
-    background: #4154f1;
-    padding: 8px 20px;
-    margin-left: 30px;
-    border-radius: 4px;
-    color: #fff;
-    text-decoration: none;
-  }
-  a{
-      text-decoration: none;
-  }
-  
-  .navbar .getstarted:hover {
-    color: #fff;
-    background: #5969f3;
-  }
-  
-  .navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 14px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-    border-radius: 4px;
-  }
-  
-  .navbar .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    font-weight: 600;
-  }
-  
-  .navbar .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: #4154f1;
-  }
-  
-  .navbar .dropdown:hover > ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-  
-  .navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-  
-  .navbar .dropdown .dropdown:hover > ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-  
-  
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #013289;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar li:hover > a {
+  color: #4154f1;
+}
+
+.navbar .getstarted {
+  background: #4154f1;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .getstarted:hover {
+  color: #fff;
+  background: #5969f3;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #4154f1;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
 /*--------------------------------------------------------------
 # rox Section
 --------------------------------------------------------------*/
 .rox {
-    width: 100%;
-    height: 100vh;
-    background: url("hero-bg\ \(1\).png") top center no-repeat;
-    background-size: cover;
-  }
-  
-  .rox h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    color: #012970;
-  }
-  
-  .rox h2 {
-    color: #444444;
-    margin: 15px 0 0 0;
-    font-size: 26px;
-  }
-  
-  .rox .btn-get-started {
-    margin-top: 30px;
-    line-height: 0;
-    padding: 15px 40px;
-    border-radius: 4px;
-    transition: 0.5s;
-    color: #fff;
-    background: #4154f1;
-    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-  }
-  
-  .rox .btn-get-started span {
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
-  
-  .rox .btn-get-started i {
-    margin-left: 5px;
-    font-size: 18px;
-    transition: 0.3s;
-  }
-  
-  .rox .btn-get-started:hover i {
-    transform: translateX(5px);
-  }
-  
-  .rox .rox-img {
-    text-align: right;
-  }
-  
-  @media (min-width: 1024px) {
-    .rox {
-      background-attachment: fixed;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .rox {
-      height: auto;
-      padding: 120px 0 60px 0;
-    }
-    .rox .rox-img {
-      text-align: center;
-      margin-top: 80px;
-    }
-    .rox .rox-img img {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .rox {
-      text-align: center;
-    }
-    .rox h1 {
-      font-size: 32px;
-    }
-    .rox h2 {
-      font-size: 24px;
-    }
-    .rox .rox-img img {
-      width: 100%;
-    }
+  width: 100%;
+  height: 100vh;
+  background: url("hero-bg\ \(1\).png") top center no-repeat;
+  background-size: cover;
+}
 
-  }
+.rox h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #012970;
+}
 
-  /*--------------------------------------------------------------
+.rox h2 {
+  color: #444444;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+
+.rox .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.rox .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.rox .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.rox .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.rox .rox-img {
+  text-align: right;
+}
+.rox .rox-img {
+  text-align: center;
+  margin-top: 80px;
+}
+.rox .rox-img img {
+  width: 80%;
+}
+
+.rox h1 {
+  font-size: 32px;
+}
+.rox h2 {
+  font-size: 24px;
+}
+.rox .rox-img img {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
 # Index Page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -342,8 +326,8 @@ body{
 .about .btn-read-more:hover i {
   transform: translateX(5px);
 }
-.about img{
-  width:100%
+.about img {
+  width: 100%;
 }
 .values .box {
   padding: 30px;
@@ -373,7 +357,7 @@ body{
 .values .box:hover img {
   transform: scale(1);
 }
-section .values .section-header h2{
+section .values .section-header h2 {
   color: #4154f1;
 }
 /*--------------------------------------------------------------
@@ -413,7 +397,6 @@ section .values .section-header h2{
   font-size: 14px;
 }
 
-
 .features .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -452,12 +435,6 @@ section .values .section-header h2{
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .features .feture-tabs h3 {
-    font-size: 28px;
-  }
 }
 
 .features .feture-tabs .nav-pills {
@@ -505,12 +482,6 @@ section .values .section-header h2{
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .features .feature-icons h3 {
-    font-size: 28px;
-  }
 }
 
 .features .feature-icons .content .icon-box {
@@ -570,7 +541,7 @@ section .values .section-header h2{
   padding: 8px 20px;
 }
 
-.services .service-box .read-more svg{
+.services .service-box .read-more svg {
   line-height: 0;
   margin-left: 5px;
   font-size: 18px;
@@ -678,14 +649,16 @@ section .values .section-header h2{
   background: #f51f9c;
 }
 
-.services .service-box:hover h3, .services .service-box:hover p, .services .service-box:hover .read-more {
+.services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
   color: #fff;
 }
 
 .services .service-box:hover .icon {
   background: #fff;
 }
-/*------------------pricing---------------------*/                                                                                             
+/*------------------pricing---------------------*/
 .pricing .pricing-box {
   padding: 40px 20px;
   background: #fff;
@@ -809,32 +782,28 @@ section .values .section-header h2{
   border: 0;
 }
 
-.portfolio #myBtnContainer{
+.portfolio #myBtnContainer {
   text-align: center;
 }
 .row {
   margin: 8px -16px;
 }
 
-
 .row,
 .row > .column {
   padding: 8px;
 }
-
 
 .column {
   float: left;
   width: 25%;
 }
 
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 
 .content {
   background-color: white;
@@ -853,17 +822,14 @@ section .values .section-header h2{
   cursor: pointer;
 }
 
-
 .btn:hover {
   background-color: #ddd;
 }
 
-
 .btn.active {
   background-color: #444444;
-   color: white;
+  color: white;
 }
-
 
 .team {
   background: #fff;
@@ -959,11 +925,11 @@ section .values .section-header h2{
   right: 8px;
   opacity: 1;
 }
-.blog-content h2{
-font-size: 12pt;
-color: #848484;
+.blog-content h2 {
+  font-size: 12pt;
+  color: #848484;
 }
-.blog-content p{
+.blog-content p {
   font-family: "Nunito", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -1057,14 +1023,16 @@ color: #848484;
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 0;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #4154f1;
 }
 
@@ -1089,37 +1057,18 @@ color: #848484;
   background: #5969f3;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.newsletter {
+  text-align: center;
+  background: #fafbff;
+  justify-content: center;
 }
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.newsletter{
-text-align: center;
-background: #fafbff;
-justify-content: center;
-
-}
-.newsletter h2{
+.newsletter h2 {
   font-size: 18pt;
   font-family: "Nunito", sans-serif;
   color: #012970;
   font-weight: 700;
-
 }
-.newsletter p{
+.newsletter p {
   color: #848484;
 }
 .newsletter form {
@@ -1156,7 +1105,6 @@ justify-content: center;
 .newsletter form input[type="submit"]:hover {
   background: #5969f3;
 }
-
 
 .footer {
   background: #f6f9ff;
@@ -1215,22 +1163,16 @@ justify-content: center;
 }
 
 .footer .footer-top {
-  background: white url("footer-bg.png")no-repeat right top;
+  background: white url("footer-bg.png") no-repeat right top;
   background-size: contain;
   border-top: 1px solid #e1ecff;
   border-bottom: 1px solid #e1ecff;
   padding: 60px 0 30px 0;
 }
 
-
-
 .footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
-
-
-
-
 
 .footer .footer-top .footer-info .logo span {
   font-size: 30px;
